@@ -1,0 +1,87 @@
+body{
+  background-image: url("back.png");
+  font-family: roboto;
+}
+.regform{
+  margin:25px;
+}
+.box{
+  margin:400px;
+  margin-top:100px;
+  text-align:left;
+  padding-left: 125px;
+  box-shadow: 5px 10px 80px #4a4a4a;
+  /* background-image: url("card_back.jpg"); */
+  background-color: white;
+  border: solid;
+  border-color: #bababa;
+}
+#regiName{
+  text-transform: full-width;
+  /* padding-left: 40px; */
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 40px;
+  color:#00A0E3;
+}
+.box input[type="email"],.box input[type="password"],.box input[type="text"]
+{
+/*  margin:20px auto;*/
+  text-align:left;
+  border:2px solid;
+  padding:10px 10px;
+  background:none;
+  border-radius:24px;
+  border-color:#6a6a6a;
+  transition:0.25s;
+  cursor:pointer;
+  color:black;
+  font-size: 15px;
+}
+.box input[type="email"]:focus,.box input[type="password"]:focus,.box input[type="text"]:focus{
+  width:250px;
+  border-color:#00A0E3;
+}
+.box input[class="btn"]
+{
+  margin:16px auto;
+  margin-top: 10px;
+  text-align:center;
+  background:none;
+  border:2px solid #54DEFD;
+  padding:14px 40px;
+  border-radius:24px;
+  border-color:#cacaca;
+  transition:0.25s;
+  cursor:pointer;
+  font-size: 15px;
+  color:black;
+  background-color: #FFFFFF;
+}
+.box input[class="btn"]:hover{
+  color: white;
+  background:#045175;
+  border-color:#FFFFFF;
+}
+ul.breadcrumb {
+padding: 10px 16px;
+list-style: none;
+background-color:#e6eeff;
+}
+ul.breadcrumb li {
+display: inline;
+font-size: 28px;
+}
+ul.breadcrumb li+li:before {
+padding: 8px;
+color: black;
+content: "/\00a0";
+}
+ul.breadcrumb li a {
+color: #0275d8;
+text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+color: #01447e;
+text-decoration: underline;
+}

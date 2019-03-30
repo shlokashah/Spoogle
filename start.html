@@ -1,0 +1,290 @@
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!--
+  <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min css"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <title>
+    SPOOGLE
+  </title>
+
+   <style type="text/css">
+
+  /*.bookmark{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background: url(navbar1.png);
+    background-position: 0 0;
+    display: inline-block;
+  }
+
+  .history{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background: url(navbar1.png);
+    background-position: -50px 0;
+    display: inline-block;
+  }
+
+  .register{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background: url(navbar1.png);
+    background-position: -100px 0;
+    display: inline-block;
+  }
+  /* #bookmark{
+    background-position: 0 0;
+  } */
+  @media screen and (max-width: 800px) {
+  .col-md-3 {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+  @media screen and (max-width: 600px) {
+    .col-md-3 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+  </style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-light stick-top">
+    <!-- <div class="container-fluid"> -->
+
+      <ul class="navbar-nav">
+      	<li class="active" style="font-size:16pt;padding-right: 50px;" ><a href="start.html">Welcome!</a></li>
+        <!-- <li class="nav-item dropdown"style="font-size:14pt;"><a  class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" href="#"><span class="glyphicon">&#xe044;</span> Bookmarks</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li> -->
+        <li class="nav-item"style="font-size:16pt;padding-right: 50px;"><a href="#">History</a></li>
+        <li class="nav-item" id="flip" style="font-size:16pt;padding-right: 50px;"><a href="#">Register</a></li>
+        <li class="nav-item" style="font-size:16pt;padding-right: 50px;"><a href="quickupdate.html">Want Some Quick Update?</a></li>
+        <li class="nav-item dropdown"style="font-size:16pt;padding-right: 50px;"><a  class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" href="#"><span class="glyphicon">&#xe044;</span> Bookmarks</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Link 1</a>
+            <a class="dropdown-item" href="#">Link 2</a>
+            <a class="dropdown-item" href="#">Link 3</a>
+          </div>
+        </li>
+        <!-- <li style="font-size:14pt; padding-left: 1440px"><a href="web1.html">Login</a></li> -->
+      </ul>
+    <!-- </div> -->
+  </nav>
+  <script>
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      (window.location.href="register.html").slideDown("slow");
+    });
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <center>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+      <img src="home.png" width="425px" height="110px" style="margin-bottom: 30px;">
+<div class="container-fluid">
+  <form style="size:40px" align="center" width="200px">
+    <input type="text" name="search" placeholder="Search" size="45"  style="font-size:18pt; padding:8px; padding-left: 23px; padding-bottom: 8px; border-color: #f1f1f1; border-radius:40px">
+     <input type="image" src="search.png" alt="Submit" width="30px" height="30px"  style=" margin-left: -50px; ">
+  </form>
+</div>
+
+<!--
+  <table>
+    <tr>
+      <td style="padding:30px">
+        <a href="https://www.google.com/">
+      <figure>
+      <img src="google.png"  width="50px" height="50px">
+      <figcaption style="align:center">Google</figcaption>
+      </figure>
+    </a>
+      </td>
+      <td style="padding:30px">
+        <a href="https://www.facebook.com/">
+      <figure>
+      <img src="facebook.png"  width="50px" height="50px">
+      <figcaption style="align:center">Facebook</figcaption>
+      </figure>
+      </a>
+      </td>
+      <td style="padding:30px">
+        <a href="https://www.google.com/drive/">
+      <figure>
+      <img src="drive.png"  width="50px" height="50px">
+      <figcaption style="align:center">Drive</figcaption>
+      </figure>
+      </a>
+      </td>
+        <td style="padding:30px">
+          <a href="https://www.youtube.com/?gl=IN">
+        <figure>
+        <img src="youtube.png"  width="50px" height="50px">
+        <figcaption style="align:center">YouTube</figcaption>
+        </figure>
+        </a>
+        </td>
+    </tr>
+    <tr>
+      <td style="padding:30px">
+          <a href="https://www.google.com/docs/about/">
+      <figure>
+      <img src="docs.png"  width="50px" height="50px">
+      <figcaption style="align:center">Docs</figcaption>
+      </figure>
+      </a>
+      </td><td style="padding:30px">
+          <a href="https://www.google.com/sheets/about/">
+      <figure>
+      <img src="sheets.png"  width="50px" height="50px">
+      <figcaption style="align:center">Sheets</figcaption>
+      </figure>
+      </a>
+      </td><td style="padding:30px">
+          <a href="https://www.google.com/slides/about/">
+      <figure>
+      <img src="slides.png"  width="50px" height="50px">
+      <figcaption style="align:center">Slides</figcaption>
+      </figure>
+      </a>
+      </td><td style="padding:30px">
+          <a href="login.html">
+      <figure>
+      <img src="login.png"  width="50px" height="50px">
+      <figcaption style="align:center">Login</figcaption>
+      </figure>
+      </a>
+      </td>
+    </tr>
+  </table>
+ -->
+
+ <br>
+ <br>
+ <br>
+ <br>
+   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+      	  <a href="https://www.google.com/">
+      <figure>
+      <img src="google.png"  width="50px" height="50px">
+      <figcaption style="align:center">Google</figcaption>
+      </figure>
+    </a>
+      </div>
+      <div class="col-md-3">
+      	<a href="https://www.facebook.com/">
+	      <figure>
+	      <img src="facebook.png"  width="50px" height="50px">
+	      <figcaption style="align:center">Facebook</figcaption>
+	      </figure>
+	    </a>
+      </div>
+      <div class="col-md-3">
+      	<a href="https://www.google.com/drive/">
+	      <figure>
+	      <img src="drive.png"  width="50px" height="50px">
+	      <figcaption style="align:center">Drive</figcaption>
+	      </figure>
+		</a>
+      </div>
+      <div class="col-md-3">
+      	<a href="https://www.youtube.com/?gl=IN">
+	        <figure>
+	        <img src="youtube.png"  width="50px" height="50px">
+	        <figcaption style="align:center">YouTube</figcaption>
+	        </figure>
+        </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+      	<a href="https://www.google.com/docs/about/">
+      <figure>
+      <img src="docs.png"  width="50px" height="50px">
+      <figcaption style="align:center">Docs</figcaption>
+      </figure>
+      </a>
+      </div>
+      <div class="col-md-3">
+      	<a href="https://www.google.com/sheets/about/">
+      <figure>
+      <img src="sheets.png"  width="50px" height="50px">
+      <figcaption style="align:center">Sheets</figcaption>
+      </figure>
+      </a>
+      </div>
+      <div class="col-md-3">
+      	<a href="https://www.google.com/slides/about/">
+      <figure>
+      <img src="slides.png"  width="50px" height="50px">
+      <figcaption style="align:center">Slides</figcaption>
+      </figure>
+      </a>
+      </div>
+      <div class="col-md-3">
+      	<a href="login.html">
+      <figure>
+      <img src="login.png"  width="50px" height="50px">
+      <figcaption style="align:center">Login</figcaption>
+      </figure>
+      </a>
+      </div>
+    </div>
+  </div>
+
+
+
+<br>
+<div class="container-fluid">
+  <footer>
+    <p  style="padding-top: 20px; color:#7a7a7a;">Designed by: Shloka Shah & Abhishek Revadekar</p>
+  </footer>
+</div>
+</center>
+</body>
+</html>
