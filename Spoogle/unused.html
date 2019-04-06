@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Email</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+  </head>
+  <body>
+      <div id="card">
+        <div class="front">
+          <img src="google.png" alt="">
+        </div>
+        <div class="back">
+          <img src="facebook.png" alt="">
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(document).ready(function (){
+          $("#card").flip({
+            trigger: 'hover'
+          });
+        });
+      </script>
+
+
+
+</body>
+</html>
