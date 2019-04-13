@@ -11,15 +11,15 @@
 		<li>Register</li>
 	</ul>
 	<div class="hidden" style=" display:none;">
-		<form class="regform" name="RegForm" action="start.php">
+		<form class="regform" name="RegForm" action="database.php" method="get">
 			<div class="box">
 				<p id='regiName'>Register</p>
 	      <p id='first' style="padding-top: 10px; color: #045175;"><strong>FIRST NAME</strong></p>
-				<p><input  id='entry' type="text" name="First Name" placeholder="Enter your First Name" required></p>
+				<p><input  id='entry' type="text" name="FirstName" placeholder="Enter your First Name" required></p>
 				<p id='last' style="padding-top: 10px; color: #045175;"><strong>LAST NAME</strong></p>
-				<p><input  id='entry' type="text" name="Last Name" placeholder="Enter your Last Name" required></p>
+				<p><input  id='entry' type="text" name="LastName" placeholder="Enter your Last Name" required></p>
 				<p id='email' style="padding-top: 10px; color: #045175;"><strong>EMAIL ID</strong></p>
-				<p><input  id='entry' type="email" name="Email Id" placeholder="Enter your Email Id" required></p>
+				<p><input  id='entry' type="email" name="EmailId" placeholder="Enter your Email Id" required></p>
 				<p id='password' style="padding-top: 10px; color: #045175;"><strong>PASSWORD</strong></p>
 				<p><input  id='entry' type="password" name="Password" placeholder="Enter your password" minlength="8" required></p>
 				<p id='gender' style="padding-top: 10px; color: #045175;"><strong>GENDER</strong></p>
@@ -33,13 +33,16 @@
 
 
 
+
+
+
 	<script type = "text/javascript">
          function validate()
 				 {
          	// var fname=document.getElementsByName("First Name");
-         	var fname=document.forms["RegForm"]["First Name"];
-					var lname=document.forms["RegForm"]["Last Name"];
-         	var email=document.forms["RegForm"]["Email Id"];
+         	var fname=document.forms["RegForm"]["FirstName"];
+					var lname=document.forms["RegForm"]["LastName"];
+         	var email=document.forms["RegForm"]["EmailId"];
 
 					var flag=true;
 
@@ -110,17 +113,16 @@
 
 
 
-				 $(document).ready(function(){
-					 $("#register").click(function(e){
-						 if(validate()){
-							alert("Name: " + $(document.getElementsByName("First Name")).val() + " " + $(document.getElementsByName("Last Name")).val()+"\nUsername: "+$(document.getElementsByName("Email Id")).val() + "\n\nRegistration successful!!!");
-						}
-						else{
-							e.preventDefault();
-						}
-
-					 });
-				 });
+				 // $(document).ready(function(){
+					//  $("#register").click(function(e){
+					// 	 if(validate()){
+					// 	}
+					// 	else{
+					// 		e.preventDefault();
+					// 	}
+				 //
+					//  });
+				 // });
 
      </script>
 
@@ -132,7 +134,7 @@
 
 			<script >
 			function clearAll(){
-				var inputs=["First Name","Last Name","Password","Email Id"];
+				var inputs=["FirstName","LastName","Password","EmailId"];
 				return inputs;
 			}
 

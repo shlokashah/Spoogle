@@ -14,9 +14,6 @@
     </form>
   </body>
 </html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -40,10 +37,10 @@
             <li><a href="start.php">Home</a></li>
             <li>Email</li>
           </ul>
-          <form class="form" method="post" name="form1">
+          <form class="form" method="post" action="loggedIn.php">
               <p style=" font-size: 26px; color:#045175;">Enter the Email ID</p>
                 <div class="styled-input">
-                  <input id="email" type="email" name="email" required >
+                  <input id="email" type="email" name="emailid" required >
                   <label>Email ID</label>
                 </div>
                 <input id="next" class="flip" type="submit" name="Next"  value="Next">
@@ -54,10 +51,10 @@
             <li><a href="start.php">Home</a></li>
             <li>Password</li>
           </ul>
-          <form class="form" action="start.php" method="POST">
+          <form class="form" method="post" action="loggedIn.php">
             <p style="font-size: 26px; color:#045175;">Enter the Password</p>
             <div class="styled-input">
-              <input type="password" required>
+              <input type="password" name="password" required>
               <label>Password</label>
             </div>
             <input id="next" type="submit" name="Next" value="Log In">
@@ -65,7 +62,6 @@
           </form>
         </div>
       </div>
-
 
 
 
@@ -94,14 +90,15 @@
         });
       </script>
 
-
-
       <script>
  		 $(document).ready(function () {
  			 	$('#card').fadeIn(1200).removeClass('hidden');
  			});
  			</script>
     </div>
+
+
+
 
 </body>
 </html>

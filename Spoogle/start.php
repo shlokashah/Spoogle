@@ -75,7 +75,15 @@
   <nav class="navbar navbar-expand-sm bg-light stick-top">
 
       <ul class="navbar-nav">
-      	<li id="write" class="active" style="font-size:16pt;padding-right: 50px;" ><a href="start.php">Welcome!</a></li>
+      	<li id="write" class="active" style="font-size:16pt;padding-right: 50px;" ><a href="start.php"><?php session_start();
+        if(isset($_SESSION['currentUser'])){
+        $name=$_SESSION['currentUser'];
+        $welcome="Welcome  ".$name."!";
+      }
+      else{
+        $welcome="Welcome!";
+      }
+       echo $welcome; ?></a></li>
 
         <li class="nav-item"style="font-size:16pt;padding-right: 50px;"><a href="#">History</a></li>
         <li class="nav-item" id="flip" style="font-size:16pt;padding-right: 50px;"><a href="#">Register</a></li>
@@ -236,10 +244,33 @@ date_default_timezone_set("Asia/Kolkata");
 print date("d/m/y G.i:s A", time());
 echo '</p>';
 
-$loggedIn=true;
+
 $no_of_users=0;
 
-if($loggedIn){
+
+$loggedIn=0;
+
+$servername = "localhost";
+$username = "root";
+$pass = "";
+$dbname = "spoogle";
+
+$conn = new mysqli($servername, $username, $pass, $dbname);
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+if(isset($name)){
+$sql = "SELECT * FROM users WHERE first_name='$name';";
+$result= $conn->query($sql);
+$row = $result->fetch_assoc();
+
+$loggedIn=$row['loggedIn'];
+}
+
+
+if($loggedIn==1){
 
     $no_of_users=$no_of_users+1;
     $text='<script type="text/javascript">
@@ -258,6 +289,10 @@ else {
 
 
 
+if (isset($_SESSION["LAST_ACTIVITY"]) && (time() - $_SESSION["LAST_ACTIVITY"] > 6)) {
+    session_destroy();
+    session_unset();
+}
  ?>
 
 </center>
